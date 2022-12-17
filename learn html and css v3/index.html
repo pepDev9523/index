@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* ------------------------ */
+      .box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .box .item {
+        border: 2px solid red;
+        grid-column: span 1;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .box .item {
+          border: 2px solid red;
+          grid-column: span 2;
+        }
+      }
+
+      @media only screen and (max-width: 626px) {
+        .box .item {
+          border: 2px solid red;
+          grid-column: span 4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="">
+      <div class="container">
+        <div class="header"></div>
+        <div class="logo">Ozilic.cms</div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Design</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input
+            class="srch"
+            type="search"
+            name=""
+            placeholder="Tyoe To Text"
+          />
+          <a href="#"> <button class="btn">search</button></a>
+        </div>
+      </div>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+          necessitatibus tempore maiores amet, laudantium repellat sit aut
+          voluptatum porro reiciendis.
+        </p>
+      </div>
+      <div class="sidebar"></div>
+      <footer></footer>
+    </div> -->
+
+    <div class="box">
+      <div class="item 1">1</div>
+      <div class="item 2">2</div>
+      <div class="item 3">3</div>
+      <div class="item 4">4</div>
+    </div>
+  </body>
+</html>
